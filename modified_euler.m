@@ -24,3 +24,5 @@ for i = 1 : n+1
     exact = subs(exact_sol, ti);
     fprintf("t: %0.2f \ty: %0.7f\t exact: %0.7f \t%0.9f \n", a+(i-1)*h, y(i), exact, abs(y(i)-exact));
 end
+ti = a:h:b;
+plot(ti, y, 'b-o');
